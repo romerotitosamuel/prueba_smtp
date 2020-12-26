@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Correo SMTP</title>
+</head>
+<body>
+
+  
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+<script>
+    //powered by elasticemanil.com
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "samuelserver@romero.com",
+    Password : "03B04135BE2488B0CC792FFA4793783709CD",
+    To : 'romerotitosamuel@gmail.com',
+    From : "romerotitosamuel@gmail.com",
+    Subject : "Este es el Objeto del mensaje",
+    Body : "Este es el mensaje del cliente que quiere contactarse"
+}).then(
+  message => alert("Estado del envio del formulario: " + message )
+);
+
+/*
+Nombre completo
+email
+Numero de telefono
+Empresa
+
+Mensaje
+
+*/
+</script>
+</body>
+</html>
